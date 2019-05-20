@@ -25,24 +25,24 @@
     text-decoration: none;
     padding: 0 10px;
 }
-.chk-menu{
+.chek-menu{
     cursor: pointer;
     font-size: 30px;
     float: right;
     line-height: 80px;
     display: none;
 }
-.chk-menu:hover,
+.chek-menu:hover,
 .menu ul a:hover
 {
     color:#d1d8e0;
 }
-#chk{
+#chek{
     visibility: hidden;
 }
 
 @media screen and (max-width:750px){
-    .chk-menu{
+    .chek-menu{
         display: block;
     }
     .menu ul{
@@ -60,7 +60,7 @@
         line-height: normal;
         padding: 5px 0;
     }
-    #chk:checked ~ .menu ul{
+    #chek:checked ~ .menu ul{
         right: 0;
     }
     
