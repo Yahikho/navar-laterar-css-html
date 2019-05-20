@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    height: 80px;
+    background: #fc5c65;
+    padding: 0 30px;
+}
+.logo{
+    float: left;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+.menu{
+    float: right;
+    line-height: 80px;
+}
+.menu ul a{
+    text-transform: uppercase;
+    font-size:13px;
+    color: #000;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.chk-menu{
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    display: none;
+}
+.chk-menu:hover,
+.menu ul a:hover
+{
+    color:#d1d8e0;
+}
+#chk{
+    visibility: hidden;
+}
+
+@media screen and (max-width:750px){
+    .chk-menu{
+        display: block;
+    }
+    .menu ul{
+        text-align: center;
+        width: 200px;
+        margin-top: 80px;
+        position: fixed;
+        height: 150px;
+        background: #fc5c65;
+        right: -200px;
+        transition: 0.4s;
+    }
+    .menu ul a{
+        display: block;
+        line-height: normal;
+        padding: 5px 0;
+    }
+    #chk:checked ~ .menu ul{
+        right: 0;
+    }
+    
+}
